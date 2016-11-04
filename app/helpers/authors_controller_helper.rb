@@ -1,0 +1,2 @@
+module AuthorsControllerHelper
+end

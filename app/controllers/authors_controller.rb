@@ -1,4 +1,4 @@
 class AuthorsController < ApplicationController
-  def NewAuthorPage
+  def New
   end
 end

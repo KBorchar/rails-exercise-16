@@ -1,2 +1,11 @@
-<h1>Authors#new</h1>
+<h1>New Author</h1>
+
+  <%= form_for :author do |f| %>
+    <p>
+      <%= f.label :'first name' %><br>
+      <%= f.text_field :'first name' %>
+    </p>
+  <% end %>
+
+
 <p>Find me in app/views/authors/new.html.erb</p>

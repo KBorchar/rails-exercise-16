@@ -41,8 +41,8 @@
       <file leaf-file-name="new.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/authors/new.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="225">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -506,12 +506,12 @@
       <option name="presentableId" value="Default" />
       <updated>1478252793667</updated>
       <workItem from="1478252796489" duration="2601000" />
-      <workItem from="1478514473746" duration="7773000" />
+      <workItem from="1478514473746" duration="8025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10374000" />
+    <option name="totallyTimeSpent" value="10626000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -702,8 +702,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/authors/new.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="225">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding />
         </state>
       </provider>

@@ -14,4 +14,11 @@ describe "New Author Page", :type => :feature do
     Author.find_by_homepage "http://wikipedia.org/Alan_Turing"
 
   end
+
+  it "should have text input for first name, last name, and homepage" do
+    visit new_author_path
+    expect(page).to have_field("First name")
+    expect(page).to have_field("Last name")
+    expect(page).to have_field("Homepage")
+  end
 end

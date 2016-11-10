@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Author Page", type => feature do
+describe "Author page", :type => :feature  do
 
 	it "should show the author's first name" do
 		author = create(:author)

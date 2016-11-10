@@ -11,7 +11,7 @@ describe "Author index page", :type => :feature do
 
 	it "should link to the new author page" do
 		visit authors_path
-		expect(page).to have_css("a", text: "Add Author")
+		expect(page).to have_css("a", :text => "Add author")
 	end
 end
 

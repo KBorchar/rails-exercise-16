@@ -7,5 +7,8 @@ describe "Author page", :type => :feature  do
 		visit author_path(author)
 		expect(page).to have_text("Alan")
 	end
+	it "should show the author's last name" do
+		expect(page).to have_text("Turing")
+	end	
 end
 

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :papers
 
   get 'new_author' => 'authors#new'
+  get 'new_paper' => 'papers#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

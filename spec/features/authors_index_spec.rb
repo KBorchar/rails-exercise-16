@@ -19,6 +19,11 @@ describe "Author index page", :type => :feature do
 		visit authors_path
 		expect(page).to have_css("a", :text => "Edit")
 	end		
+	it "should link to destroying and author" do
+		create(:author)
+		visit authors_path
+		expect(page).to have_css("a", :text => "Destroy")
+	end	
 
 end
 

@@ -25,7 +25,7 @@ describe "New Author Page", :type => :feature do
     visit new_author_path 
     fill_in 'author_first_name', with: "Alan"
     fill_in 'author_homepage', with: "http://wikipedia.org/Alan_Turing"
-    click_button 'Save author'
-    expect(page).to have_text("last name can't be blank")
+    click_button 'Save Author'
+    expect(page).to have_text("Last name can't be blank")
   end
 end

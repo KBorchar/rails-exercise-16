@@ -59,5 +59,14 @@ describe "New Paper page", :type => :feature do
 		Paper.find_by! venue: "Mind 49: 433-460"
 		Paper.find_by! year: "1950"
   end
+
+  it "should show validation errors" do
+    visit new_paper_path
+    fill_in 'paper_title', with: ""
+
+    click_button 'Save Paper'
+    expect(page).to have_text("Title can't be blank")
+
+  end
 end
 

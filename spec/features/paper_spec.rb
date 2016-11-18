@@ -33,7 +33,11 @@ describe "New Paper page", :type => :feature do
 		p=Paper.new(year: nil)
 		expect(p).to_not be_valid
 	end
+	it "should not validate with non-integer year" do
+    p=Paper.new(year: "nineteen-fifty")
+    expect(p).to_not be_valid
 
+  end
 
 
   #it "should save an instance of paper when a paper is created" do

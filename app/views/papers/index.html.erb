@@ -1,0 +1,19 @@
+<h1>Listing Papers</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Venue</th>
+    <th>Year</th>
+  </tr>
+
+  <% @papers.each do |paper| %>
+      <tr>
+        <td><%=paper.title %></td>
+        <td><%=paper.venue %></td>
+        <td><%=paper.year %></td>
+        <td><%=link_to 'Show', paper_path(paper) %></td>
+      </tr>
+  <% end %>
+
+</table>

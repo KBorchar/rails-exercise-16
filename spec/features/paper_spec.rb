@@ -23,6 +23,19 @@ describe "New Paper page", :type => :feature do
   	expect(p).to_not be_valid
   end
 
+	it "should not validate without the venue" do
+
+		p=Paper.new(venue: nil)
+		expect(p).to_not be_valid
+  end
+	it "should not validate without the year" do
+
+		p=Paper.new(year: nil)
+		expect(p).to_not be_valid
+	end
+
+
+
   #it "should save an instance of paper when a paper is created" do
    # paper = create(:paper)
     #visit paper_path(paper)

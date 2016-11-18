@@ -1,7 +1,4 @@
 class PapersController < ApplicationController
-  def new
-    @paper = Paper.new
-  end
 
   def index
     @papers = Paper.all
@@ -11,11 +8,33 @@ class PapersController < ApplicationController
     @paper = Paper.find(params[:id])
   end
 
+  def new
+    @paper = Paper.new
+  end
+
+  def edit
+    @paper = Paper.find(params[:id])
+  end
+
   def create
     @paper = Paper.new(paper_params)
 
-    @paper.save
+    if @paper.save
     redirect_to @paper
+    else
+      render 'new'
+    end
+    
+  end
+
+  def update
+    @paper = Paper.find(params[:id])
+
+    if @paper.update(article_params)
+      redirect_to @paper
+    else
+      render 'edit'
+    end
   end
 
   def paper_params

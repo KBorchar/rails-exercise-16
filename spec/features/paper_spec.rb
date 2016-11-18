@@ -48,16 +48,16 @@ describe "New Paper page", :type => :feature do
 		#expect(page).to have_text(1950)
 	#end
 
-	#it "should be able to save a paper with title, venue and year" do
-	#	visit new_paper_path
-	#	fill_in 'paper_title', with: "COMPUTING MACHINERY AND INTELLIGENCE"
-	#	fill_in 'paper_venue', with: "Mind 49: 433-460"
-	#	fill_in 'paper_year', with: "1950"
-	#	click_button 'Save Paper'
+	it "should be able to save a paper with title, venue and year" do
+		visit new_paper_path
+		fill_in 'paper_title', with: "COMPUTING MACHINERY AND INTELLIGENCE"
+		fill_in 'paper_venue', with: "Mind 49: 433-460"
+		fill_in 'paper_year', with: "1950"
+		click_button 'Save Paper'
 
-	#	Paper.find_by! title: "COMPUTING MACHINERY AND INTELLIGENCE"
-	#	Paper.find_by! venue: "Mind 49: 433-460"
-	#	Paper.find_by! year: "1950"
-  #end
+		Paper.find_by! title: "COMPUTING MACHINERY AND INTELLIGENCE"
+		Paper.find_by! venue: "Mind 49: 433-460"
+		Paper.find_by! year: "1950"
+  end
 end
 

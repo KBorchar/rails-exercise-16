@@ -17,6 +17,12 @@ describe "New Paper page", :type => :feature do
     expect(page).to have_css('input[type="submit"]')
   end
 
+  it "should not validate without the title" do
+
+  	p=Paper.new(title: nil)
+  	expect(paper).to_not be_valid
+  end
+
   #it "should save an instance of paper when a paper is created" do
    # paper = create(:paper)
     #visit paper_path(paper)
@@ -24,7 +30,7 @@ describe "New Paper page", :type => :feature do
 		#expect(page).to have_text("Mind 49: 433-460")
 		#expect(page).to have_text(1950)
 	#end
-  
+
 	#it "should be able to save a paper with title, venue and year" do
 	#	visit new_paper_path
 	#	fill_in 'paper_title', with: "COMPUTING MACHINERY AND INTELLIGENCE"

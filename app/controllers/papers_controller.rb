@@ -24,7 +24,7 @@ class PapersController < ApplicationController
     else
       render 'new'
     end
-    
+
   end
 
   def update

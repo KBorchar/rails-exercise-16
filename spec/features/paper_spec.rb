@@ -20,7 +20,7 @@ describe "New Paper page", :type => :feature do
   it "should not validate without the title" do
 
   	p=Paper.new(title: nil)
-  	expect(paper).to_not be_valid
+  	expect(p).to_not be_valid
   end
 
   #it "should save an instance of paper when a paper is created" do

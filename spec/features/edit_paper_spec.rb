@@ -26,7 +26,13 @@ describe "Edit paper page", :type => :feature do
     expect(page).to have_field("Author 3")
     expect(page).to have_field("Author 4")
     expect(page).to have_field("Author 5")
+  end
 
+  it "should preselect the atcual authors in the drop downs" do
+    create(:author)
+    p = create(:paper)
+    visit edit_paper_path(p)
+    expect(page).to have_select("Author 1", selected: "Alan Turing")
   end
 
 end

@@ -72,5 +72,7 @@ describe "New Paper page", :type => :feature do
     p=build(:paper, authors: [])
     expect(p.authors.size).to eq(0)
   end
+
+
 end
 

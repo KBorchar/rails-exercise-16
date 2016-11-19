@@ -34,5 +34,13 @@ describe "Paper index page", :type => :feature do
 
     expect(Paper.first).to be_nil
   end
+
+  it "should allow filter by year" do
+  create(:paper)
+  create(:paper, year: 1968, title: 'go to statement considered harmful')
+  visit papers_path(year: 1950)
+  expect(page).not_to have_text("go to statement considered harmful")
+  end
+
 end
 

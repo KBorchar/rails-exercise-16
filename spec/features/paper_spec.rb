@@ -66,7 +66,11 @@ describe "New Paper page", :type => :feature do
 
     click_button 'Save Paper'
     expect(page).to have_text("Title can't be blank")
+  end
 
+  it "should have and belong to many authors" do
+    p=build(:paper, authors: [])
+    expect(p.authors.size).to eq(0)
   end
 end
 
